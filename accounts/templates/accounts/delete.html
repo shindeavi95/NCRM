@@ -1,0 +1,18 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card-body">
+            <form action="" method="POST" item.id>
+                {% csrf_token %}
+                <p>Are you sure to Delete: <strong style="color: red;">{{ item }}</strong></p>
+
+                <a class="btn btn-warning" href="{% url 'home' %}">Cancel</a>
+                <input class="btn btn-danger" type="submit" name="Confirm">
+            </form>
+        </div>    
+    </div>
+</div>     
+
+{%  endblock %}
