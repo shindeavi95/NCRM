@@ -1,1 +1,1 @@
-web: gunicorn NCRM.wsgi --log-file - 
+web: gunicorn NCRM.wsgi --log-file -
